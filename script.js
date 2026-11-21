@@ -34,7 +34,7 @@ function adicionarTarefa() {
 botaoAdicionar.addEventListener('click', adicionarTarefa);
 
 // Permite adicionar pressionando a tecla Enter
-input.addEventListener('keypress', (evento) => {
+input.addEventListener('keydown', (evento) => {
     if (evento.key === 'Enter') {
         adicionarTarefa();
     }
